@@ -1,0 +1,267 @@
+.portfolio {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Hide horizontal scrollbar */
+}
+
+.left-side {
+  flex: 1;
+  background-color: #800080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.intro {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  position: relative; /* Set position to relative to position the circle */
+}
+
+.intro-container {
+  position: relative;
+  z-index: 1; /* Add this to place the intro and bio above the circular background */
+}
+
+/* Style for the circular background */
+.circle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #002855, transparent);
+  border-radius: 50%;
+  z-index: 0; /* Keep the circular background behind the intro and bio */
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 16px;
+}
+
+.bio p {
+  font-size: 16px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.right-side {
+  flex: 1; 
+  background-color: #008000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.project h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.project p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.project {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* Add cursor pointer to indicate the clickable area */
+  cursor: pointer;
+  display: flex; /* Display project square as flex container */
+  justify-content: space-between; /* Distribute content horizontally */
+  align-items: center; /* Vertically center content */
+  transition: transform 0.3s; /* Add transition for the transform property */
+}
+
+.project-link {
+  display: flex; /* Display as flex container */
+  text-decoration: none;
+  color: inherit; /* Inherit text color from parent */
+  width: 100%; /* Fill the entire project square */
+}
+
+.project-content {
+  display: flex; /* Display content as flex container */
+  align-items: center; /* Vertically center content */
+}
+
+.project-image {
+  width: 100px; /* Set a smaller fixed width for the image container */
+  border: 1px solid #ddd; /* Add a small border around the image */
+  border-radius: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.project-image img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto;
+}
+
+.project-info {
+  flex: 1; /* Allow the project info to take up remaining space */
+  padding-left: 10px;
+}
+
+/* Apply the hover effect to the entire .project box */
+.project:hover {
+  transform: scale(1.02); /* Add a slight scale effect on hover */
+}
+
+.project-title {
+  margin-bottom: 5px; /* Add spacing below the project title */
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.project-description {
+  margin-top: 5px; /* Add spacing above the project description */
+  margin-right: 40px;
+}
+
+.coming-soon {
+  position: relative; /* Set the position to relative for absolute positioning */
+}
+
+.coming-soon-overlay {
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  /* Adjust the height and padding as needed for the message box */
+  height: 80px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Place the overlay above other content */
+}
+
+.coming-soon-message {
+  font-size: 48px; /* Increase font size for the message */
+  font-weight: bold; /* Make the message bold */
+  color: #333; /* Set the text color */
+  position: relative; /* Set the position to relative to avoid inheriting the blur */
+  z-index: 2; /* Ensure the message is above the overlay */
+}
+
+/* Style to blur the project info */
+.blurred {
+  filter: blur(6px);
+}
+
+.blurred-image {
+  filter: blur(5px); /* Adjust the blur strength as needed */
+}
+
+.contact {
+  display: flex; /* Make the contact items display as flex items */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  margin-top: 20px; /* Add spacing at the top */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.download-button,
+.block-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333; /* Button background color */
+  border: 2px solid #fff; /* Button border color */
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.download-button:hover,
+.block-button:hover {
+  background-color: #008000; /* Change button background color on hover */
+  border-color: #00ff00; /* Change button border color on hover */
+}
+
+.block-button {
+  background-color: #800080; /* Different color for block buttons */
+}
+
+.block-button:hover {
+  background-color: #ff00ff; /* Change color on hover */
+}
+
+.square-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: 0 5px;
+  background-color: #333;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+}
+
+.square-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Add a box-shadow on hover */
+.square-button:hover {
+  background-color: #008000; /* Change button background color on hover */
+  border-color: #00ff00; /* Change button border color on hover */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Add a glow effect on hover */
+}
+
+.custom-font1 {
+  font-family: "Font1", sans-serif; /* Replace "Font1" with your desired font */
+  font-size: 36px;
+  font-weight: bold;
+  /* Add other font-related styles as needed */
+}
+
+/* Style for the second line */
+.custom-font2 {
+  font-family: "Font2", sans-serif; /* Replace "Font2" with your desired font */
+  font-size: 24px;
+  /* Add other font-related styles as needed */
+}
+
+/* Style for the third line */
+.custom-font3 {
+  font-family: "Font3", sans-serif; /* Replace "Font3" with your desired font */
+  font-size: 18px;
+  /* Add other font-related styles as needed */
+}
