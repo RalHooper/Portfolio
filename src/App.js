@@ -1,6 +1,6 @@
 import React from 'react';
 import github from './github.png'; 
-import linkedin from './linkedin.jpg';
+import linkedin from './linkedin.png';
 import LightsOut from './LightsOut.png';
 import Weather from './Weather.png';
 import Waits from './Waits.png';
@@ -65,7 +65,7 @@ function App() {
     </div>
   </a>
   <div className="coming-soon-overlay">
-    <h2 className="coming-soon-message">COMING SOON: THEME PARK WAIT TIMES</h2>
+    <h2 className="coming-soon-message">Coming Soon: Theme Park Wait Times</h2>
   </div>
 </div>
   <div className="buttons">

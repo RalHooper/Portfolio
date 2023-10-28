@@ -7,13 +7,22 @@
 
 .left-side {
   flex: 1;
-  background-color: #800080;
+  background-color: #0622fa;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   color: #fff;
+}
+
+.right-side {
+  flex: 1;
+  background: linear-gradient(to left, #4a005e, #0622fa);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: rgb(0, 0, 0);
 }
 
 .intro {
@@ -57,15 +66,8 @@
 .bio p {
   font-size: 16px;
   margin: 20px 0;
+  font-family: cursive;
   position: relative;
-}
-
-.right-side {
-  flex: 1; 
-  background-color: #008000;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
 }
 
 .project h2 {
@@ -172,14 +174,14 @@
 }
 
 .blurred-image {
-  filter: blur(5px); /* Adjust the blur strength as needed */
+  filter: blur(5px);
 }
 
 .contact {
-  display: flex; /* Make the contact items display as flex items */
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
-  margin-top: 20px; /* Add spacing at the top */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .buttons {
@@ -264,4 +266,10 @@
   font-family: "Font3", sans-serif; /* Replace "Font3" with your desired font */
   font-size: 18px;
   /* Add other font-related styles as needed */
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
 }
