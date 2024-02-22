@@ -1,0 +1,198 @@
+.background {
+  display: flex;
+  min-height: 100vh; /* Ensure the background extends at least to the height of the viewport */
+  background: linear-gradient(to right, #001f3f 50%, #FF4500 50%);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  color: #fff;
+  margin-top: 15px; /* Adjust the margin-top value to add more headroom */
+}
+
+.navLink {
+  margin: 0 10px;
+  margin-top: -20px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: -40px;
+}
+
+.contentContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 30px; /* Adjust the margin-top value to add more space */
+  position: relative;
+}
+
+
+.content {
+  flex: 1;
+  padding: 20px 20px 40px; /* Adjust padding to provide more space at the bottom */
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-top: 180px; /* Adjust the margin as needed */
+  margin-left: 10px;
+}
+
+.homeImageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  margin-left: auto; /* Automatically adjust left margin */
+  margin-right: 120px; /* Maintain the previous right margin */
+  display: flex;
+  align-items: center; /* Vertically center the image */
+  top: -250px; /* Adjust the vertical position */
+}
+
+.homeImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.shadow {
+  position: absolute;
+  top: 50%;
+  right: 0; /* Adjust if needed */
+  transform: translateY(-50%);
+  width: calc(100% + 20px); /* Adjust for shadow width */
+  height: calc(100% + 20px); /* Adjust for shadow height */
+  background-color: rgba(0, 0, 0, 0.7); /* Darken the shadow by reducing alpha value */
+  border-radius: 10px; /* Match the border-radius of the image */
+  z-index: -1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add a box-shadow effect */
+}
+
+.homeIntro {
+  font-size: 36px;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  color: #000; /* Change the color to white */
+  margin-top: 120px;
+  margin-left: 30px;
+}
+
+.homeDescription {
+  font-size: 16px;
+  color: #000;
+  display: block; /* Ensure the element is displayed as a block */
+  margin-top: 180px; /* Add some top margin to create space between homeIntro and homeDescription */
+  margin-left: 30px;
+}
+
+.homeIntro,
+.homeDescription {
+  position: absolute; /* Change to absolute positioning */
+  top: 0; /* Position from the top of the container */
+  left: 0; /* Position from the left of the container */
+}
+
+/* Adjustments for the typing-animation class */
+.typing-animation::after {
+  position: absolute; /* Change to absolute positioning */
+  bottom: 0; /* Position from the bottom of the container */
+  left: 0; /* Position from the left of the container */
+  display: inline-block;
+  vertical-align: bottom;
+  animation: typing 5s steps(40, end) forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0; /* Start with no width */
+  }
+  100% {
+    width: 2px; /* Width of the incisor */
+  }
+}
+
+.hidden {
+    display: none;
+  }
+
+.typing-animation {
+  display: block; /* Add this to make the elements block-level */
+}
+
+.typing-complete::after {
+  display: none; /* Hide the incisors when typing animation is complete */
+}
+
+.resumeButton {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 10px; /* Push the button to the bottom of the container */
+  margin-left: 10px;
+  text-decoration: none;
+  background: #FFD700; /* Yellow background color */
+  color: #000; /* Black text color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  background: #FF4500;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contactSection {
+  font-size: 14px; /* Adjust the font size as needed */
+  margin-top: 20px; /* Add some top margin for spacing */
+  margin-left: 10px;
+}
+
+.contactEmail {
+  font-size: 12px; /* Adjust the font size as needed */
+  margin-top: 5px; /* Add some top margin for spacing */
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  bottom: 30px; /* Adjust the bottom value to maintain its position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.socialButton {
+  display: inline-block;
+  padding: 1px; /* Adjust the padding to control the size */
+  margin: 0 5px; /* Adjust the margin for spacing between buttons */
+  text-decoration: none;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0); /* Add a border with a color that contrasts with the background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.socialButton img {
+  width: 20px; /* Adjust the width of the image */
+  height: 20px; /* Adjust the height of the image */
+}
+
+.socialButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.8); /* This is an orange glow effect, adjust as needed */
+}
+

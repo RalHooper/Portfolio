@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100&family=Bigelow+Rules&family=Black+Ops+One&display=swap');
+
+
+.projectsBackground {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  background: linear-gradient(to right, #001f3f 50%, #FF4500 50%);
+  padding: 0 80px; /* Add padding to both the left and right sides */
+}
+
+.projectBox {
+  width: 300px;
+  height: 400px; /* Set a fixed height for the project boxes */
+  margin: 20px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Add a small shadow for a border effect */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.projectsNav {
+  margin: 20px 0; 
+}
+
+.projectsContainer {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+}
+
+.projectDetails {
+  flex-grow: 1; /* Allow the description to take up available space */
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Asap', sans-serif;
+}
+
+.projectImage {
+  border: 2px solid white; /* Border size */
+  width: 100px; /* Default width of the image */
+  height: 100px; /* Default height of the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 0; /* Top margin */
+}
+
+.projectImage img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  border: none; /* Remove any border on the image */
+}
+
+.projectBox.weather .projectImage img {
+  width: 100px; /* Adjust the width of the image for Weather Check */
+  height: 100px; /* Adjust the height of the image for Weather Check */
+}
+
+/* Larger image size for Weather Check */
+.projectBox.weather .projectImage {
+  width: 100px; /* Adjust the width of the image for Weather Check */
+  height: 100px; /* Adjust the height of the image for Weather Check */
+}
+
+/* Larger image size for Project Title 3 */
+.projectBox.project3 .projectImage {
+  width: 100px; /* Adjust the width of the image for Project Title 3 */
+  height: 100px; /* Adjust the height of the image for Project Title 3 */
+}
+
+.projectBox.project3 .projectDetails {
+  position: relative;
+}
+
+.projectBox.project3 .comingSoonOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.projectBox.project3 .comingSoonOverlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projectBox.project3 .comingSoonOverlay p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.projectTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin: 10px auto 0;
+}
+
+.projectDescription {
+  font-size: 25px;
+  margin-bottom: 10px; /* Add margin between description and button */
+}
+
+.seeProjectButton {
+  display: block;
+  padding: 10px 20px;
+  margin-top: auto; /* Push the button to the bottom of the container */
+  text-decoration: none;
+  background: #FFD700; /* Yellow background color */
+  color: #000; /* Black text color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.seeProjectButton:hover {
+  background: #FFFF99; /* Light yellow background on hover */
+  box-shadow: 0 0 10px rgba(255, 223, 0, 0.8); /* Yellow glow effect on hover */
+}
+
+.comingSoonOverlay {
+  font-family: 'Asap', sans-serif;
+}
+
+.sectionTitle, .projectTitle {
+  font-family: 'Black Ops One', cursive; /* Set the font family */
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.projectTitle {
+  font-size: 24px; /* Adjust the font size for project titles */
+  font-weight: bold;
+  margin-bottom: 10px;
+}

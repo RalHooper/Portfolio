@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100&family=Bigelow+Rules&family=Black+Ops+One&display=swap');
+
+.aboutMeTitle {
+  text-align: center;
+  /* font-family: 'Black Ops One', cursive; */
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.aboutMeBackground {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh;
+  background: linear-gradient(to right, #001f3f 50%, #FF4500 50%);
+  padding: 0 80px; /* Adjust padding as needed */
+}
+
+.aboutMeContentContainer {
+  background: white;
+  padding: 20px; /* Adjust padding as needed */
+  text-align: left; /* Align paragraphs to the left */
+  max-width: 800px; /* Adjust the maximum width as needed */
+  width: 100%;
+}
+
+.aboutMeNav {
+  margin: 20px 0;
+  align-self: flex-end; /* Position on the top right side */
+}
+
+.aboutMeSectionTitle {
+  font-family: 'Black Ops One', cursive;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.aboutMeContent {
+  font-family: 'Asap', sans-serif;
+}
+
+.centeredLine {
+  text-align: center;
+}
