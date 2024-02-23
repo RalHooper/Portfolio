@@ -5,7 +5,6 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import NoPage from './pages/NoPage';
-import Header from './components/Header';
 import './App.css';
 
 function App() {

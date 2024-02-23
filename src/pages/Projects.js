@@ -48,7 +48,7 @@ function Projects() {
             </div>
             <div className="projectTitle">Wait Times</div>
             <div className="projectDescription">Find out the wait times to the rides any major theme park on the planet!</div>
-            <a className="seeProjectButton">See Project</a>
+              <div className="seeProjectButton">See Project</div>
             <div className="comingSoonOverlay">
               <h2>Coming Soon!</h2>
               <p>Currently working on an app that check ride wait times for theme parks worldwide!</p>

@@ -8,20 +8,20 @@
   align-items: flex-end;
   height: 100vh;
   background: linear-gradient(to right, #001f3f 50%, #FF4500 50%);
-  padding: 0 80px; /* Add padding to both the left and right sides */
+  padding: 0 80px; 
 }
 
 .projectBox {
   width: 300px;
-  height: 400px; /* Set a fixed height for the project boxes */
+  height: 400px; 
   margin: 20px;
   background: black;
   color: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Add a small shadow for a border effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
   display: flex;
-  flex-direction: column; /* Stack children vertically */
+  flex-direction: column; 
 }
 
 .projectsNav {
@@ -38,7 +38,7 @@
 }
 
 .projectDetails {
-  flex-grow: 1; /* Allow the description to take up available space */
+  flex-grow: 1; 
   padding: 10px;
   margin-top: 10px;
   display: flex;
@@ -49,36 +49,36 @@
 }
 
 .projectImage {
-  border: 2px solid white; /* Border size */
-  width: 100px; /* Default width of the image */
-  height: 100px; /* Default height of the image */
+  border: 2px solid white; 
+  width: 100px; 
+  height: 100px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px auto 0; /* Top margin */
+  margin: 5px auto 0; 
 }
 
 .projectImage img {
-  max-width: 100%; /* Ensure the image doesn't exceed the container width */
-  max-height: 100%; /* Ensure the image doesn't exceed the container height */
-  border: none; /* Remove any border on the image */
+  max-width: 100%; 
+  max-height: 100%; 
+  border: none; 
 }
 
 .projectBox.weather .projectImage img {
-  width: 100px; /* Adjust the width of the image for Weather Check */
-  height: 100px; /* Adjust the height of the image for Weather Check */
+  width: 100px; 
+  height: 100px; 
 }
 
-/* Larger image size for Weather Check */
+
 .projectBox.weather .projectImage {
-  width: 100px; /* Adjust the width of the image for Weather Check */
-  height: 100px; /* Adjust the height of the image for Weather Check */
+  width: 100px; 
+  height: 100px; 
 }
 
-/* Larger image size for Project Title 3 */
+
 .projectBox.project3 .projectImage {
-  width: 100px; /* Adjust the width of the image for Project Title 3 */
-  height: 100px; /* Adjust the height of the image for Project Title 3 */
+  width: 100px; 
+  height: 100px; 
 }
 
 .projectBox.project3 .projectDetails {
@@ -91,8 +91,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  background: rgba(0, 0, 0, 0.8); 
+  backdrop-filter: blur(10px); 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,16 +120,16 @@
 
 .projectDescription {
   font-size: 25px;
-  margin-bottom: 10px; /* Add margin between description and button */
+  margin-bottom: 10px; 
 }
 
 .seeProjectButton {
   display: block;
   padding: 10px 20px;
-  margin-top: auto; /* Push the button to the bottom of the container */
+  margin-top: auto; 
   text-decoration: none;
-  background: #FFD700; /* Yellow background color */
-  color: #000; /* Black text color */
+  background: #FFD700; 
+  color: #000; 
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -137,8 +137,8 @@
 }
 
 .seeProjectButton:hover {
-  background: #FFFF99; /* Light yellow background on hover */
-  box-shadow: 0 0 10px rgba(255, 223, 0, 0.8); /* Yellow glow effect on hover */
+  background: #FFFF99; 
+  box-shadow: 0 0 10px rgba(255, 223, 0, 0.8); 
 }
 
 .comingSoonOverlay {
@@ -146,7 +146,7 @@
 }
 
 .sectionTitle, .projectTitle {
-  font-family: 'Black Ops One', cursive; /* Set the font family */
+  font-family: 'Black Ops One', cursive; 
 }
 
 .sectionTitle {
@@ -157,7 +157,6 @@
 }
 
 .projectTitle {
-  font-size: 24px; /* Adjust the font size for project titles */
-  font-weight: bold;
+  font-size: 24px; 
   margin-bottom: 10px;
 }
