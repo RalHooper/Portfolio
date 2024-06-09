@@ -24,7 +24,7 @@ function Projects() {
             </div>
             <div className="projectTitle">Lights Out!</div>
             <div className="projectDescription">
-               Can you turn the lights out on all the squares before the timer runs out? Test your skills here!
+               Test your skills turn the lights out on all the squares before the timer runs out!
             </div>
             <a href="https://lightsoutchallenge.netlify.app/" className="seeProjectButton">See Project</a>
           </div>

@@ -1,7 +1,9 @@
 .background {
   display: flex;
-  min-height: 100vh; 
+  min-height: 100vh;
   background: linear-gradient(to right, #001f3f 50%, #FF4500 50%);
+  padding: 40px 30px;
+  box-sizing: border-box;
 }
 
 .nav {
